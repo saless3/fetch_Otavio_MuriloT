@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>CEP Lookup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pesquisa CEP">
+    <meta name="keywords" content="CEP">
+    <meta name="author" content="Bryan e Gabriel Rodrigues">
+    <link rel="shortcut icon" href="../Fetch/imgs/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Fetch/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../Fetch/JS/Forms_CEP.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col-10">
+                <div class="mb-3">
+                    <div class="input-group mb-3">
+                        <label for="cep" class="col-form-label px-2">CEP</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Buscar</button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="endereco" class="col-form-label px-2">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Endereço">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="complemento" class="col-form-label px-2">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="cidade" class="col-form-label px-2">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="bairro" class="col-form-label px-2">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="estado" class="col-form-label px-2">Estado</label>
+                        <input type="text" class="form-control" id="estado" placeholder="Estado">
+                    </div>
+                    <div class="input-group mb-3">
+                        <label for="numero" class="col-form-label px-2">Número</label>
+                        <input type="number" class="form-control" id="numero" placeholder="Número">
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col" id="json">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
